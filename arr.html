@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+.top {
+    display: flex;
+ align-items: center;
+height: 33px;
+
+}
+.screen{
+width: 260px;
+height: 535px;
+background-color: aliceblue;
+border-radius:20px;
+border: 5px solid black;
+background-color: rgb(47, 47, 47);
+}
+.camera{
+   display: flex;
+   align-items: center;
+background-color: black;
+width: 98px;
+height: 23px;
+color: aliceblue;
+border-radius: 100px;
+border: 2px solid red;
+margin-left:24px;
+}
+
+.camacamara{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+    border-radius: 100%;
+    
+}
+.time{
+margin-left: 16px;
+font-size: 13px;
+color: white;
+}
+
+.calculator{
+    
+
+margin-top: 115px;
+
+}
+.Show{
+    font-size: 30px;
+    text-align: right;
+height: 1em;
+color: white;
+margin-right: 5px;
+font-size:50px;
+margin-bottom: 5px;
+overflow: hidden;
+
+} 
+.butttttton{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 5px;
+
+padding-left: 8px;
+padding-right: 8px;
+}
+.button{
+background-color: rgb(113, 113, 113);
+width: 55px;
+height: 55px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center; 
+transition: 0.5s; 
+cursor: default;
+}
+.button:hover{
+    background-color: rgb(156, 156, 156);
+}
+.button:active{
+   transform: scale(0.9);
+}
+.yallo{
+background-color: rgb(255, 199, 32);
+}
+.yallo:hover{
+    background-color: rgb(255, 224, 130);
+}
+.g{
+    background-color: rgb(198, 198, 198);
+}
+</style>
+<body>
+    
+
+        <div class="screen">
+            <div class="top">
+            <b class="time">14:27</b>
+             <div class="camera">
+<div class="camacamara"></div>
+              
+
+            </div>
+              
+        </div>
+
+<div class="calculator">
+    <p class="Show" id="t"></p>
+        <div class="butttttton">
+            <div class="button g" onclick="plus('delete')" >ลบ</div>
+            <div class="button g"  onclick="ko()" >-/+</div>
+            <div class="button g"  onclick="plus('%')">%</div>
+            <div class="button yallo" onclick="plus('/')">/</div>
+            <div class="button" onclick="j(9)"><p>9</p></div>
+            <div class="button" onclick="j(8)"><p>8</p></div>
+            <div class="button" onclick="j(7)"><p>7</p></div>
+            <div class="button yallo" onclick="plus('*')">x</div>
+            <div class="button" onclick="j(6)"><p>6</p></div>
+            <div class="button" onclick="j(5)"><p>5</p></div>
+            <div class="button"  onclick="j(4)"><p>4</p></div>
+            <div class="button yallo"onclick="plus('-')" >-</div>
+            <div class="button" onclick="j(1)"><p >1</p></div>
+            <div class="button" onclick="j(2)"><p>2</p></div>
+            <div class="button" onclick="j(3)"><p>3</p></div>
+            <div class="button yallo" onclick="plus('+')"><p>+</p></div>
+            <div class="button" ></div>
+            <div class="button"onclick="j(0)"><p>0</p></div>
+            <div class="button" onclick="plus('.')"><p>.</p></div>
+            <div class="button yallo" onclick="equal ('=')"><p>=</p></div>
+        </div>
+</div>
+    </div>
+    <script src="arr.js"></script>
+</body>
+</html>
