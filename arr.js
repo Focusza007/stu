@@ -1,34 +1,49 @@
-let r=""
-let b = ""
-function j (number){
-r = r+number
-b = b+number
-document.getElementById("t").innerHTML=r
- let m =  m + number
- return m
-}
-function plus (p){
-    
-    if(p =="%"){
-        r =(r / 100) 
-        document.getElementById("t").innerHTML=r
-       return
-    }else if ( p == "delete") {
-      r=""
-    }else{
-r  = r+  p }
- document.getElementById("t").innerHTML=r
-}
-function ko(){
-    r = parseFloat(r) * -1
-    r= r.toString();
-    document.getElementById("t").innerHTML=r
-}
-function equal (o){
-    if(o == "="){
-     ok =   eval(r)
-     r=ok.toString();
-        document.getElementById("t").innerHTML=ok
-    }
+let behind = "";
+let  front = "";
+let display = document.getElementById("t");
 
+function num(number) {
+   front += number;
+  behind += number;
+  display.innerHTML =  front;
+}
+
+function Calculation(p) {
+  if (p == "-+") {
+    behind = behind * -1;
+     front =  front * -1;
+    behind = behind.toString();
+     front =  front.toString();
+     display.innerHTML =  front;
+  } else if (p == "%") {
+    behind = behind + "%";
+     front =  front + "% of";
+     display.innerHTML =  front;
+  } else {
+    behind += p;
+     front += p;
+     display.innerHTML =  front;
+  }
+}
+
+function summarize(o) {
+  if (o == "=") {
+    try {
+
+
+      behind= eval(behind);
+      behind=behind.toString()
+      display.innerHTML =behind;
+       front = behind;
+       
+    } catch {
+        display.innerHTML = "error";
+        behind = "";
+     front = "";
+    }
+  } else if (o == "delete") {
+    behind = "";
+     front = "";
+     display.innerHTML = front;
+  }
 }

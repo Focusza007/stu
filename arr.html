@@ -20,6 +20,8 @@ background-color: aliceblue;
 border-radius:20px;
 border: 5px solid black;
 background-color: rgb(47, 47, 47);
+
+
 }
 .camera{
    display: flex;
@@ -116,29 +118,29 @@ background-color: rgb(255, 199, 32);
 <div class="calculator">
     <p class="Show" id="t"></p>
         <div class="butttttton">
-            <div class="button g" onclick="plus('delete')" >ลบ</div>
-            <div class="button g"  onclick="ko()" >-/+</div>
-            <div class="button g"  onclick="plus('%')">%</div>
-            <div class="button yallo" onclick="plus('/')">/</div>
-            <div class="button" onclick="j(9)"><p>9</p></div>
-            <div class="button" onclick="j(8)"><p>8</p></div>
-            <div class="button" onclick="j(7)"><p>7</p></div>
-            <div class="button yallo" onclick="plus('*')">x</div>
-            <div class="button" onclick="j(6)"><p>6</p></div>
-            <div class="button" onclick="j(5)"><p>5</p></div>
-            <div class="button"  onclick="j(4)"><p>4</p></div>
-            <div class="button yallo"onclick="plus('-')" >-</div>
-            <div class="button" onclick="j(1)"><p >1</p></div>
-            <div class="button" onclick="j(2)"><p>2</p></div>
-            <div class="button" onclick="j(3)"><p>3</p></div>
-            <div class="button yallo" onclick="plus('+')"><p>+</p></div>
+            <div class="button g" onclick="summarize ('delete')" >ลบ</div>
+            <div class="button g"  onclick="Calculation ('-+')" >-/+</div>
+            <div class="button g"  onclick="Calculation('%')">%</div>
+            <div class="button yallo" onclick="Calculation('/')">/</div>
+            <div class="button" onclick="num(9)"><p>9</p></div>
+            <div class="button" onclick="num(8)"><p>8</p></div>
+            <div class="button" onclick="num(7)"><p>7</p></div>
+            <div class="button yallo" onclick="Calculation('*')">x</div>
+            <div class="button" onclick="num(6)"><p>6</p></div>
+            <div class="button" onclick="num(5)"><p>5</p></div>
+            <div class="button"  onclick="num(4)"><p>4</p></div>
+            <div class="button yallo"onclick="Calculation('-')" >-</div>
+            <div class="button" onclick="num(1)"><p >1</p></div>
+            <div class="button" onclick="num(2)"><p>2</p></div>
+            <div class="button" onclick="num(3)"><p>3</p></div>
+            <div class="button yallo" onclick="Calculation('+')"><p>+</p></div>
             <div class="button" ></div>
-            <div class="button"onclick="j(0)"><p>0</p></div>
-            <div class="button" onclick="plus('.')"><p>.</p></div>
-            <div class="button yallo" onclick="equal ('=')"><p>=</p></div>
+            <div class="button"onclick="num(0)"><p>0</p></div>
+            <div class="button" onclick="Calculation('.')"><p>.</p></div>
+            <div class="button yallo" onclick="summarize ('=')"><p>=</p></div>
         </div>
 </div>
-<div>uuuuu</div>
+
     </div>
     <script src="arr.js"></script>
 </body>
